@@ -1,0 +1,119 @@
+@charset "utf-8";
+*{
+	font-family: arial;
+	box-sizing: border-box
+}
+body {
+	margin:0;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(0,0,0) 100%);
+	background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%,rgb(0,0,0) 100%);
+	background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(0,0,0) 100%);
+}
+a {
+	text-decoration: none
+}
+nav {
+	width: 100%;
+	height: 40px;
+	flex-flow: row nowrap;
+	align-items: center;
+	background-color: rgba(16,42,42,0.8);
+}
+nav>ul {
+	margin: 0;
+	display:flex;
+	list-style: none;
+	flex-flow: row;
+}
+nav>ul>li {
+	padding: 0.5rem 1.5rem;
+}
+nav>ul>li::marker {
+	color: white;
+}
+nav>ul>li>a {
+	color: white;
+	font-size: 20px;
+}
+nav>ul>li:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+
+header {
+	background-color: rgb(20,50,50);
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	margin: auto;
+	padding: 30px;
+	font-size: 35px;
+	font-family: Arial
+}
+h2 {
+	text-align: center;
+	margin: 30px;
+	font-size: 28px;
+	font-family: monospace
+}
+h3 {
+	margin: 10px;
+	padding-left: 30px;
+	text-align: start;
+	font-size: 24px;
+	font-family: monospace
+}
+p {
+	padding-left: 20px;
+}
+hr {
+	margin: 1rem 3rem 0rem 3rem
+}
+main {
+	color: white;
+	width: 80%;
+	margin: auto;
+	min-height: 100vh;
+	padding: 0rem 2rem 0rem 2rem;
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 5%,rgba(0,0,0,0.7) 9%,rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.7) 80%,rgba(0,0,0,0.7) 91%,rgba(0,0,0,0.5) 95%,rgba(0,0,0,0) 100%);
+	display: block;
+}
+.imgcontent{
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+.imgcontent>img{
+	width: 50%;
+}
+
+form {
+	padding: 2rem;
+	display: flex;
+	flex-flow: column wrap;
+}
+form>label {
+	margin: 7px;
+}
+textarea {
+	resize: none;
+}
+#ENVOIE {
+	background-color: rgba(0,0,0,0.5); 
+	border: 1px solid rgb(220,220,220);
+	border-radius: 1rem; 
+	transition-duration: 0.2s;
+	width: 5rem;
+	height: 2rem;
+	margin: 1rem;
+	color: rgb(230,230,230);
+}
+#ENVOIE:hover {
+	background-color: rgba(100,100,100,0.6); 
+	border: 1px solid rgb(255,255,255);
+	color: rgb(255,255,255);
+}
